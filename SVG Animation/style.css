@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --white: #F5EFED;
+    --black: #0F0A0A;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: var(--black);
+}
+
+.container {
+    width: 1000px;
+    height: 400px;
+}
+
+svg {
+    overflow: visible;
+}
