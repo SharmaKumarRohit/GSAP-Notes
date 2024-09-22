@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/lenis@1.1.13/dist/lenis.css"
+    />
+    <title>Card Animation to GSAP and ScrollTrigger</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+      }
+
+      html.lenis,
+      html.lenis body {
+        height: auto;
+      }
+
+      .lenis.lenis-smooth {
+        scroll-behavior: auto !important;
+      }
+
+      .lenis.lenis-smooth [data-lenis-prevent] {
+        overscroll-behavior: contain;
+      }
+
+      .lenis.lenis-stopped {
+        overflow: hidden;
+      }
+
+      .lenis.lenis-smooth iframe {
+        pointer-events: none;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+        <div class="text-white text-center card__container bg-black w-full py-[15vh] flex flex-col justify-center items-center gap-4">
+            <div class="card card1 sticky top-[15vh] bg-[#2e251e] w-[27vw] py-[15vh] rounded-xl px-[25px] flex flex-col items-center gap-4">
+                <img src="./images/1.png" alt="img1" class="w-[180px] aspect-square">
+                <h1 class="text-5xl uppercase">The <br> <span class="font-bold">Alogrithm</span></h1>
+                <p class="text-[18px]">The algorithm's workings are shrouded in complexity.</p>
+            </div>
+            <div class="card card1 sticky top-[15vh] bg-[#2e251e] w-[27vw] py-[15vh] rounded-xl px-[25px] flex flex-col items-center gap-4">
+                <img src="./images/2.png" alt="img1" class="w-[180px] aspect-square">
+                <h1 class="text-5xl uppercase">The <br> <span class="font-bold">Dogma</span></h1>
+                <p class="text-[18px]">Enshrining the principles of conformity and reinforcing the status quo.</p>
+            </div>
+            <div class="card card3 sticky top-[15vh] bg-[#2e251e] w-[27vw] py-[15vh] rounded-xl px-[25px] flex flex-col items-center gap-4">
+                <img src="./images/3.png" alt="img1" class="w-[180px] aspect-square">
+                <h1 class="text-5xl uppercase">The <br> <span class="font-bold">Architects</span></h1>
+                <p class="text-[18px]">The elusive entities, lacking human form, operate in the shadows.</p>
+            </div>
+            <div class="card card4 sticky top-[15vh] bg-[#2e251e] w-[27vw] py-[15vh] rounded-xl px-[25px] flex flex-col items-center gap-4">
+                <img src="./images/4.png" alt="img1" class="w-[180px] aspect-square">
+                <h1 class="text-5xl uppercase">The <br> <span class="font-bold">Wasteland</span></h1>
+                <p class="text-[18px]">This overlooked realm, a consequence of algorithmic judgments.</p>
+            </div>
+            <div class="card card5 sticky top-[15vh] bg-[#2e251e] w-[27vw] py-[15vh] rounded-xl px-[25px] flex flex-col items-center gap-4">
+                <img src="./images/5.png" alt="img1" class="w-[180px] aspect-square">
+                <h1 class="text-5xl uppercase">The <br> <span class="font-bold">Narrative</span></h1>
+                <p class="text-[18px]">The collective story sculpted by the architects.</p>
+            </div>
+            <div class="card card6 sticky top-[15vh] bg-[#2e251e] w-[27vw] py-[15vh] rounded-xl px-[25px] flex flex-col items-center gap-4">
+                <img src="./images/6.png" alt="img1" class="w-[180px] aspect-square">
+                <h1 class="text-5xl uppercase">The <br> <span class="font-bold">Opulence</span></h1>
+                <p class="text-[18px]">The cognitive elite's wealth in the algorithmic society.</p>
+            </div>
+        </div>
+    </main>
+    <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
